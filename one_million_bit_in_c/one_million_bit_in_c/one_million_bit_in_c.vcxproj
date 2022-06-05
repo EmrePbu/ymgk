@@ -24,6 +24,7 @@
     <ProjectGuid>{1d7c896c-a8b3-4bac-b1a8-5d3d7cfefb55}</ProjectGuid>
     <RootNamespace>xorshiftinc</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>one_million_bit_in_c</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
