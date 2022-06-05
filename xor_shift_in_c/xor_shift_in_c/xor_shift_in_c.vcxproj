@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="mtwister.h" />
     <ClInclude Include="xorshift.h" />
   </ItemGroup>
   <ItemGroup>
