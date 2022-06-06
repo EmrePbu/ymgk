@@ -92,7 +92,7 @@ uint64_t xorshift64(uint64_t seed[]) {
 
 
 int main() {
-	uint32_t state[1] = { 123456789 };  // "seed" (can be anthing but 0)
+	uint32_t state[1] = { 185541073 };  // "seed" (can be anthing but 0)
 	FILE* fptr;
 	fptr = fopen(".\\data.txt", "w");
 
