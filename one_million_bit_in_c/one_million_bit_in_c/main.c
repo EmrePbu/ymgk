@@ -65,7 +65,7 @@ double genRand(MTRand* rand) {
 }
 
 uint32_t xorshift32(uint32_t seed[]) {
-	if (seed[0] == NULL)
+	if (seed[1] == NULL)
 	{
 		return -1;
 	}
@@ -78,7 +78,7 @@ uint32_t xorshift32(uint32_t seed[]) {
 }
 
 uint64_t xorshift64(uint64_t seed[]) {
-	if (seed[0] == NULL)
+	if (seed[1] == NULL)
 	{
 		return -1;
 	}
@@ -93,10 +93,12 @@ uint64_t xorshift64(uint64_t seed[]) {
 
 int main() {
 	uint32_t state[1] = { 185541073 };  // "seed" (can be anthing but 0)
+	printf("%u\n", xorshift32(state));
+
 	FILE* fptr;
 	fptr = fopen(".\\data.txt", "w");
 
-	for (int i = 0; i < 1000000; i++) {
+	for (int i = 0; i < 1'000'000; i++) {
 		MTRand r = seedRand(xorshift32(state));
 		double temp = genRand(&r);
 		if (temp >= 0.5)
